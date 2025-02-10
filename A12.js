@@ -50,7 +50,7 @@ const memoizedFib = memoize(fib);
 const memoizedFactorial = memoize(factorial);
 
 // Test cases
-console.log(memoizedSum(3, 2)); // 5
+console.log(memoizedSum(3, 2)); // 
 console.log(memoizedSum(2, 3)); // 5, but computes separately
 console.log(memoizedFib(10));   // 89
 console.log(memoizedFib(10));   // Returns cached result: 89
