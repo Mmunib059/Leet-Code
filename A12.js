@@ -57,6 +57,18 @@ console.log(memoizedFib(10));   // Returns cached result: 89
 console.log(memoizedFactorial(5)); // 120
 console.log(memoizedFactorial(5)); // Returns cached result: 120
 
+// Test case for sum
+let callCount = 0;
+const memoizedFn = memoize(function (a, b) {
+    callCount += 1;
+    return a + b;
+});
+console.log(memoizedFn(2, 3)); // 5
+console.log(memoizedFn(2, 3)); // Returns cached result: 5
+
+console.log(callCount); // 1
+
+
 /** 
  * let callCount = 0;
  * const memoizedFn = memoize(function (a, b) {
