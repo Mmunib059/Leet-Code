@@ -13,3 +13,9 @@ function map(arr, fn) {
     }
     return result;
 }
+
+// Test cases
+console.log(map([1, 2, 3], (x, i) => x + i)); // [1, 3, 5]
+console.log(map([1, 2, 3], (x, i) => x * i)); // [0, 2, 6]
+console.log(map([1, 2, 3], (x, i) => x - i)); // [1, 1, 1]
+
