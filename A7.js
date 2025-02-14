@@ -19,3 +19,13 @@ function reduce(nums, fn, init) {
     }
     return val;
   }
+
+// Test cases
+console.log(reduce([1, 2, 3], (acc, curr) => acc + curr, 0)); // 6
+console.log(reduce([1, 2, 3], (acc, curr) => acc * curr, 1)); // 6
+console.log(reduce([1, 2, 3], (acc, curr) => acc - curr, 10)); // 4
+console.log(reduce([], (acc, curr) => acc + curr, 0)); // 0
+console.log(reduce([], (acc, curr) => acc + curr, 10)); // 10
+console.log(reduce([], (acc, curr) => acc * curr, 1)); // 1
+
+
