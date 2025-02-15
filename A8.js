@@ -23,3 +23,12 @@ function compose(functions) {
       return result;
     };
   }
+
+// Test cases
+const f1 = (x) => x + 1;
+const f2 = (x) => x * 2;
+const f3 = (x) => x - 3;
+const f4 = (x) => x / 4;
+
+
+
