@@ -18,3 +18,11 @@ function filter(arr, fn) {
     }
     return filteredArr;
   }
+
+// Test cases
+const arr = [1, 2, 3, 4, 5];
+const fn1 = (x) => x % 2 === 0;
+const fn2 = (x, i) => x + i > 3;
+console.log(filter(arr, fn1)); // [2, 4]
+console.log(filter(arr, fn2)); // [4, 5]
+console.log(filter([], fn1)); // []
