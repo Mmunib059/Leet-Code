@@ -17,3 +17,7 @@ function factorial(n) {
 // Example usage:
 const number = 5;
 console.log(`The factorial of ${number} is ${factorial(number)}`);
+// Output: The factorial of 5 is 120
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
