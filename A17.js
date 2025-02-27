@@ -23,3 +23,11 @@ function maxAbsoluteSum(nums) {
 
     return Math.max(Math.abs(maxSum), Math.abs(minSum));
 }
+
+// Example usage:
+const nums = [1, -3, 2, 3, -4];
+console.log(maxAbsoluteSum(nums)); // Output: 5
+// In the example above, the maximum absolute sum of any subarray is 5, which is obtained by taking the subarray [2, 3].
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
