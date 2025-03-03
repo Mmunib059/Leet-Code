@@ -34,3 +34,11 @@ var lenLongestFibSubseq = function(arr) {
 
     return maxLen >= 3 ? maxLen : 0;
 };
+
+// Time complexity: O(n^2)
+// Space complexity: O(n^2)
+
+// Example 1:
+const arr = [1,2,3,4,5,6,7,8];
+console.log(lenLongestFibSubseq(arr)); // Output: 5
+// Explanation: The longest subsequence that is Fibonacci-like: [1,2,3,5,8].
